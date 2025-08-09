@@ -7,7 +7,7 @@ import Home from './components/home/Home.jsx';
 
 export default function App() {
 
-  const [movies, setMovies] = useState({});
+  const [movies, setMovies] = useState([]);
 
   const getMovies = async () => {
     try {
