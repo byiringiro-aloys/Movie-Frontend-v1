@@ -1,0 +1,50 @@
+.review-item {
+    margin-bottom: 1rem;
+}
+
+.review-content {
+    padding: 0.5rem 0;
+}
+
+.review-text {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.review-timestamp {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.alert-success {
+    margin-bottom: 1rem;
+    border-color: #d4edda;
+    color: #155724;
+    background-color: #d4edda;
+}
+
+.alert-danger {
+    margin-bottom: 1rem;
+}
+
+.form-control:focus {
+    border-color: #17a2b8;
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.25);
+}
+
+.btn-outline-info:hover {
+    background-color: #17a2b8;
+    border-color: #17a2b8;
+}
+
+.spinner-border {
+    color: #17a2b8;
+}
+
+
+.review-item:hover {
+    cursor:pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.2s ease;
+} 

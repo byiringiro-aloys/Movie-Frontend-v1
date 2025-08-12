@@ -1,0 +1,121 @@
+.trailer-container {
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: #000;
+}
+
+.back-button-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 20;
+}
+
+.back-button {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 600;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.react-player-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 10;
+}
+
+.loading-overlay .spinner-border {
+    color: #007bff;
+}
+
+.loading-overlay p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .trailer-container {
+        height: 70vh;
+    }
+    
+    .loading-overlay p {
+        font-size: 1rem;
+    }
+    
+    .back-button-container {
+        top: 10px;
+        left: 10px;
+    }
+    
+    .back-button {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .trailer-container {
+        height: 60vh;
+    }
+    
+    .loading-overlay p {
+        font-size: 0.9rem;
+    }
+    
+    .back-button {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+}
+
+/* YouTube player customization */
+.react-player-container iframe {
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Error state styling */
+.alert {
+    margin: 2rem;
+    text-align: center;
+}
+
+/* Container centering for error states */
+.d-flex.justify-content-center.align-items-center {
+    min-height: 90vh;
+}
+
+/* Text center alignment for error pages */
+.text-center {
+    text-align: center;
+}
